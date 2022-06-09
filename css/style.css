@@ -24,6 +24,7 @@ body {
     outline: none;
     list-style: none;
     word-wrap: break-word;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Didact Gothic', sans-serif;
@@ -39,7 +40,7 @@ p {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.75em;
-    color: #999;
+    color: #fff;
     margin-bottom: 20px;
     letter-spacing: 0.25px;
 }
@@ -472,7 +473,7 @@ hr {
 .section-number {
     font-family: 'Oswald', sans-serif;
     color: transparent;
-    -webkit-text-stroke: 1px #333;
+    -webkit-text-stroke: 1px #fff;
     opacity: .8;
     font-weight: 700;
     font-size: 85px;
@@ -919,6 +920,12 @@ header .video-container video{
     left: 0;
     z-index: -1;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.vid video{
+    height: 100vh;
     width: 100%;
     object-fit: cover;
 }
@@ -1481,7 +1488,7 @@ header .video-container video{
     display: block;
 }
 .projects-carousel.owl-carousel .owl-stage-outer {
-    overflow: visible;
+    /* overflow: visible; */
     padding: 0px 0px 0px;
 }
 .projects-single {
@@ -1499,6 +1506,7 @@ header .video-container video{
     width: 100%;
     transform: scale(1);
     transition: transform 500ms ease;
+    height: 300px;
 }
 .projects-single:hover .projects-img img {
     transform: scale(1.05);
@@ -1506,7 +1514,7 @@ header .video-container video{
 .projects-content {
     position: relative;
     display: block;
-    background-color: #252525;
+    background-color: var(--bg-main);
     padding: 30px;
     margin-top: -60px;
     margin-left: 30px;
@@ -1551,8 +1559,8 @@ header .video-container video{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 27px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
     line-height: 1.25em;
     color: #fff;
     transition: all 500ms ease;
@@ -1648,6 +1656,27 @@ header .video-container video{
     .project-bar {
      margin-top: 0px; 
     }
+}
+
+.quote-area{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area i{
+    font-size: 15px;
+    color: var(--bg-color);
+}
+
+.quote-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+
+.quote-area .quote{
+    font-size: 32px;
+    text-align: center;
+    word-break: break-all;
 }
 
 /* ======= Projects 2 style ======= */
