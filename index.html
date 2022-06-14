@@ -14,11 +14,17 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="shortcut icon" href="img/DS-Casa-Inteligente-Logo-tipo.ico" type="image/x-icon">
 
 </head>
 
 <body>
   <!-- Progress scroll totop -->
+  <div class="progress-wrap cursor-pointer">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
   <div class="progress-wrap cursor-pointer">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
@@ -30,8 +36,8 @@
       <!-- Logo -->
       <div class="logo-wrapper navbar-brand valign">
         <a data-aos="zoom-in-left" data-aos-delay="150" class="logo" href="index.html">
-          <!-- <img src="img/logo.png" alt=""> -->
-          <h2>D-S<span>Casa inteligente</span></h2>
+          <img src="img/logo.png"  alt="">
+          <!-- <h2>D-S<span>Casa inteligente</span></h2> -->
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -42,8 +48,8 @@
         <ul class="navbar-nav ml-auto">
           <li data-aos="zoom-in-left" data-aos-delay="300" class="nav-item"><a class="nav-link active"
               href="index.html">Home</a></li>
-          <li data-aos="zoom-in-left" data-aos-delay="450" class="nav-item"><a class="nav-link "
-              href="#about">Sobre</a></li>
+          <li data-aos="zoom-in-left" data-aos-delay="450" class="nav-item"><a class="nav-link " href="#about">Sobre</a>
+          </li>
           <li data-aos="zoom-in-left" data-aos-delay="600" class="nav-item"><a class="nav-link"
               href="services.html">Serviços</a></li>
           <li data-aos="zoom-in-left" data-aos-delay="750" class="nav-item"><a class="nav-link"
@@ -65,7 +71,7 @@
           <li data-aos="zoom-in-left" data-aos-delay="900" class="nav-item"><a class="nav-link"
               href="blog.html">Blog</a></li>
           <li data-aos="zoom-in-left" data-aos-delay="1150" class="nav-item"><a class="nav-link"
-              href="contact.html">Contactos</a></li>
+              href="contact.html">COntacte-nos</a></li>
         </ul>
       </div>
     </div>
@@ -74,7 +80,7 @@
   <header class="header slider-fade">
     <!-- viadeo  -->
     <div class="video-container">
-      <video src="video/Good Night PT.mp4" id="videos" loop autoplay muted></video>
+      <video src="video/DS-video Intro.mp4" id="videos" loop autoplay muted></video>
     </div>
 
     <div class="social-icon animate-box fadeInLeft animated">
@@ -87,7 +93,7 @@
     <!-- 🎮 start any section -->
     <section class="any">
       <div class="container">
-        <div class="texto">
+        <div class="texto" data-aos="fade-right" data-aos-delay="150">
           <h2>DS - Casa inteligente </h2>
           <h3>Automação residencial <br> e Segurança electrónica</h3>
           <!-- <a href="#form" class="button" id="openF">Nos contacte</a> -->
@@ -103,14 +109,14 @@
           <div class="col-md-12">
             <!-- <div class="col-md-12 animate-box" data-animate-effect="fadeInUp"> -->
             <div class="about">
-              <figure data-aos="fade-left" data-aos-delay="300"> <img src="img/team.jpeg"
+              <figure data-aos="fade-left" data-aos-delay="300"> <img src="img/mover.jpg"
                   class="animate-box fadeInRight animated" alt="Equipe D-S casa inteligente"> </figure>
               <div class="caption ">
                 <div data-aos="fade-right" data-aos-delay="300">
-                  <div class="section-number">.01</div>
+                  <!-- <div class="section-number">.01</div> -->
                   <!-- <div  class="section-subtitle">Conheçanos</div> -->
-                  <div class="section-title">Sobre nós</div>
-                  
+                  <div class="section-title">O que nos move</div>
+
                   <p>A DIUA & SUNGA é uma empresa de prestação de serviços que atua no mercado de
                     Frio e climatização e outros serviços.</p>
                   <p>Nasceu com o objetivo de oferecer ao segmento de climatização, ideias inovadoras em
@@ -127,60 +133,62 @@
       </div>
     </section>
 
-     <!-- Projects section -->
-     <section id="projects" class="projects section-padding">
+    <!-- Projects section -->
+    <section id="projects" class="projects section-padding">
       <div class="container">
-          <div class="row">
-              <div class="col-md-12 mb-30">
-                  <div class="section-number">.03</div>
-                  <div class="section-subtitle">Portfolio</div>
-                  <div class="section-title">Nossos Projectos</div>
-              </div>
+        <div class="row">
+          <div class="col-md-12 mb-30">
+            <div class="section-number">.03</div>
+            <div class="section-subtitle">Portfolio</div>
+            <div class="section-title">Nossos Projectos</div>
           </div>
-          <div class="container">
-            <div class="projects-carousel owl-theme owl-carousel">
-              <div class="projects-single">
-                  <div class="projects-img"> <img src="img/use-cases-climate-header-small.jpg" alt=""> </div>
-                  <div class="projects-content">
-                      <div class="projects-tagline">Casa inteligente</div>
-                      <div class="projects-title"><a href="project-page.html">Lorem ipsum dolor sit amet.</a></div>
-                      <div class="projects-arrow"> <a href="project-page.html"><span
-                                  class="fas fa-arrow-right"></span></a> </div>
-                  </div>
+        </div>
+        <div class="container">
+          <div class="projects-carousel owl-theme owl-carousel">
+            <div class="projects-single">
+              <div class="projects-img"> <img src="img/use-cases-climate-header-small.jpg" alt=""> </div>
+              <div class="projects-content">
+                <div class="projects-tagline">Casa inteligente</div>
+                <div class="projects-title"><a href="project-page.html">Lorem ipsum dolor sit amet.</a></div>
+                <div class="projects-arrow"> <a href="project-page.html"><span class="fas fa-arrow-right"></span></a>
+                </div>
               </div>
-              <div class="projects-single">
-                  <div class="projects-img"> <img src="img/use-cases-climate-header-small.jpg" alt=""> </div>
-                  <div class="projects-content">
-                      <div class="projects-tagline">Frio</div>
-                      <div class="projects-title"><a href="project-page.html">Lorem ipsum dolor sit amet.</a></div>
-                      <div class="projects-arrow"> <a href="project-page.html"><span
-                                  class="fas fa-arrow-right"></span></a> </div>
-                  </div>
+            </div>
+            <div class="projects-single">
+              <div class="projects-img"> <img src="img/use-cases-climate-header-small.jpg" alt=""> </div>
+              <div class="projects-content">
+                <div class="projects-tagline">Frio</div>
+                <div class="projects-title"><a href="project-page.html">Lorem ipsum dolor sit amet.</a></div>
+                <div class="projects-arrow"> <a href="project-page.html"><span class="fas fa-arrow-right"></span></a>
+                </div>
               </div>
-              <div class="projects-single">
-                  <div class="projects-img"> <img src="img/use-cases-climate-header-small.jpg" alt=""> </div>
-                  <div class="projects-content">
-                      <div class="projects-tagline">Serviço de automação</div>
-                      <div class="projects-title"><a href="project-page.html">Lorem ipsum dolor sit amet.</a></div>
-                      <div class="projects-arrow"> <a href="project-page.html"><span
-                                  class="fas fa-arrow-right"></span></a> </div>
-                  </div>
+            </div>
+            <div class="projects-single">
+              <div class="projects-img"> <img src="img/use-cases-climate-header-small.jpg" alt=""> </div>
+              <div class="projects-content">
+                <div class="projects-tagline">Serviço de automação</div>
+                <div class="projects-title"><a href="project-page.html">Lorem ipsum dolor sit amet.</a></div>
+                <div class="projects-arrow"> <a href="project-page.html"><span class="fas fa-arrow-right"></span></a>
+                </div>
               </div>
+            </div>
           </div>
           <div class="quote-area">
-            <i class="fas fa-quote-left"></i><p class="quote"> A inspiração existe, porém temos que encontrá-la trabalhando. </p> <i class="fas fa-quote-right"></i>
+            <i class="fas fa-quote-left"></i>
+            <p class="quote"> A inspiração existe, porém temos que encontrá-la trabalhando. </p> <i
+              class="fas fa-quote-right"></i>
           </div>
-          </div>
+        </div>
       </div>
-  </section>
-  <div class="vid">
-    <!-- viadeo  -->
-    <!-- <div class="video-container">
-      <video src="video/automation.mp4" id="videos" loop autoplay muted></video>
+    </section>
+    <div class="vid">
+      <!-- viadeo  -->
+      <div class="video-container">
+      <video src="video/DS-INSTA.mp4" id="videos" loop autoplay muted></video>
     </div>
-  </div> -->
+  </div>
 
-  <!-- <section class="any">
+      <section class="any">
     <div class="container">
       <div class="texto">
         <h2>DS - Casa inteligente </h2>
@@ -215,11 +223,50 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-    <!-- Services section -->
-    <!-- <section class="services mb-90">
+      <!-- Services section -->
+      <section class="services mb-90">
       <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mb-30">
+            <!-- <div class="section-number">.05</div> -->
+            <div class="section-subtitle">Nosso Serviços</div>
+            <div class="section-title">Serviços</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
+            <div class="owl-carousel owl-theme">
+              <div class="item bg-1">
+                <div class="con">
+                  <div class="icon-img"><img src="img/1.png" alt=""></div>
+                  <h5>Frio</h5>
+                  <p>Architecture bibendum eros onne vane the sutate the sit ame vehicula nubare
+                    alacera in evensa sitae zusto.</p>
+                </div>
+              </div>
+              <div class="item bg-2">
+                <div class="con">
+                  <div class="icon-img"><img src="img/2.png" alt=""></div>
+                  <h5>Casa inteligente</h5>
+                  <p>Architecture bibendum eros onne vane the sutate the sit ame vehicula nubare
+                    alacera in evensa sitae zusto.</p>
+                </div>
+              </div>
+              <div class="item bg-3">
+                <div class="con">
+                  <div class="icon-img"><img src="img/3.png" alt=""></div>
+                  <h5>Exterior Design</h5>
+                  <p>Architecture bibendum eros onne vane the sutate the sit ame vehicula nubare
+                    alacera in evensa sitae zusto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
             <div class="owl-carousel owl-theme">
@@ -251,133 +298,293 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <!-- Blog section -->
-    <section class="blog section-padding">
+    <section class="mb-20">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center mb-30">
-            <div class="section-number">.05</div>
-            <div class="section-subtitle">Nosso Blog</div>
-            <div class="section-title">Últimas noticias</div>
+            <!-- <div class="section-number">.05</div> -->
+            <div class="section-subtitle">Nossos Parceiros</div>
+            <div class="section-title">Parceiros</div>
           </div>
         </div>
+
         <div class="row">
-          <div class="col-md-12">
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="post-img">
-                  <a href="post.html">
-                    <div class="img"> <img src="img/feed.jpg" alt=""> </div>
-                  </a>
-                </div>
-                <div class="cont">
-                  <div class="info"> <a href="blog.html"><span>Blog</span></a> <a href="blog.html">October, 21</a>
-                  </div>
-                  <h5><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h5>
-                </div>
+          <!-- <div class="col-md-12">
+            <div class="about-flex">
+              <div class="about-img">
+                <img src="img/team.jpeg" alt="">
               </div>
-              <div class="item">
-                <div class="post-img">
-                  <a href="post.html">
-                    <div class="img"> <img src="img/feed.jpg" alt=""> </div>
-                  </a>
-                </div>
-                <div class="cont">
-                  <div class="info"> <a href="blog.html"><span>Blog</span></a> <a href="blog.html">October, 18</a>
-                  </div>
-                  <h5><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                  </h5>
-                </div>
+    
+              <div class="about-content">
+                <h1>Conheça-nos</h1>
+                <p>
+                  Desenvolvemos projectos arquitectónicos, previlegiando os princípios
+                  da sustentabilidade com o objetivo de proporcionar ao utentes espaços
+                  estéticos, confortáveis e que reflitam a sua personalidade. Usamos a
+                  tecnologia bim, com a finalidade de produzir projectos cuja execução
+                  proporcione ao investidor (cliente) rapidez e economia na sua execução.
+                </p>
               </div>
-              <div class="item">
-                <div class="post-img">
-                  <a href="post.html">
-                    <div class="img"> <img src="img/feed.jpg" alt=""> </div>
-                  </a>
-                </div>
-                <div class="cont">
-                  <div class="info"> <a href="blog.html"><span>Blog</span></a> <a href="blog.html">October, 15</a>
-                  </div>
-                  <h5><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                  </h5>
-                </div>
+            </div>
+          </div> -->
+
+          <!--  -->
+          <div class="card" >
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img src="img/team.jpeg" alt="...">
               </div>
-              <div class="item">
-                <div class="post-img">
-                  <a href="post.html">
-                    <div class="img"> <img src="img/feed.jpg" alt=""> </div>
-                  </a>
-                </div>
-                <div class="cont">
-                  <div class="info"> <a href="blog.html"><span>Blog</span></a> <a href="blog.html">October, 12</a>
-                  </div>
-                  <h5><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                  </h5>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="card" >
+            <div class="row no-gutters">
+              
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <img src="img/team.jpeg" alt="...">
+              </div>
+            </div>
+          </div>
+          <!--  -->
         </div>
       </div>
     </section>
 
-    <!-- Footer section -->
-    <footer class="main-footer">
-      <div class="container call-action">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <div class="contact-info">
-              <div class="section-subtitle">Informação de contactos</div>
-              <p class="mb-0"></p>
-              <p class="mb-0">+244 2333333</p>
-              <p class="mb-60"></p>
-            </div>
-          </div>
+    <section class="any">
+      <div class="container">
+        <div class="texto">
+          <h2 class=" text-center ">Suporte tecnico e apoio ao cliente </h2>
+          <!-- <h3>Automação residencial <br> e Segurança electrónica</h3> -->
+          <p class="text-center" >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, 
+            excepturi! Sunt accusantium nobis minima aspernatur? Autem ea nihil 
+            neque earum perferendis culpa sequi eaque, praesentium fuga. Earum 
+            officia quod doloremque.
+          </p>
+          <div class="butn-dark text-center "><a href="about.html"><span>Saber mais
+            <i class="fas fa-arrow-right"></i></span></a></div>
         </div>
       </div>
-      <div class="bottom-footer">
+    </section>
+
+      <!-- Blog section -->
+      <section class="blog section-padding">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <p>Copyright © 2022. uniTuenda All right reserved.</p>
+            <div class="col-md-12 text-center mb-30">
+              <div class="section-number">.05</div>
+              <div class="section-subtitle">Nosso Blog</div>
+              <div class="section-title">Últimas noticias</div>
             </div>
-            <div class="col-md-4">
-              <ul class="social">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <p><a href="#">Privacy Policy</a> <span>|</span> <a href="#">Terms of Use</a></p>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="post-img">
+                    <a href="post.html">
+                      <div class="img"> <img src="img/feed.jpg" alt=""> </div>
+                    </a>
+                  </div>
+                  <div class="cont">
+                    <div class="info"> <a href="blog.html"><span>Blog</span></a> <a href="blog.html">October, 21</a>
+                    </div>
+                    <h5><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h5>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="post-img">
+                    <a href="post.html">
+                      <div class="img"> <img src="img/feed.jpg" alt=""> </div>
+                    </a>
+                  </div>
+                  <div class="cont">
+                    <div class="info"> <a href="blog.html"><span>Blog</span></a> <a href="blog.html">October, 18</a>
+                    </div>
+                    <h5><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="post-img">
+                    <a href="post.html">
+                      <div class="img"> <img src="img/feed.jpg" alt=""> </div>
+                    </a>
+                  </div>
+                  <div class="cont">
+                    <div class="info"> <a href="blog.html"><span>Blog</span></a> <a href="blog.html">October, 15</a>
+                    </div>
+                    <h5><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="post-img">
+                    <a href="post.html">
+                      <div class="img"> <img src="img/feed.jpg" alt=""> </div>
+                    </a>
+                  </div>
+                  <div class="cont">
+                    <div class="info"> <a href="blog.html"><span>Blog</span></a> <a href="blog.html">October, 12</a>
+                    </div>
+                    <h5><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <div class="main-footer-bg main-footer-bottom"> <img src="img/banner.jpg" alt="background">
-      <div class="main-footer-bg-overlay"></div>
-    </div>
-  </div>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/jquery-migrate-3.0.0.min.js"></script>
-  <script src="js/jquery.isotope.v3.0.2.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/scrollIt.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/main.js"></script>
+      </section>
 
-  <script src="js/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      offset: 150,
-    });
-  </script>
+      <!-- Contact section -->
+      <section class="contact section-padding2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-subtitle">Localização</div>
+              <div class="section-title">Contactos</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-90">
+              <p>Thank you so much for reaching out to us - we are excited to connect with you! Tell us about you. If
+                you do not receive response within 24 hours, please contact us directly email or phone.</p>
+              <ul class="list-unstyled contact-list">
+                <li>
+                  <div class="icon"><span class="fas fa-phone"></span></div>
+                  <div class="text">
+                    <p><a href="tel:+244939423267">+244 939 423 267</a></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon"> <span class="fas fa-at"></span> </div>
+                  <div class="text">
+                    <p><a href="mailto:ds7automacao@gmail.com">ds7automacao@gmail.com
+                      </a></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon"> <span class="fas fa-map-marker"></span> </div>
+                  <div class="text">
+                    <p>Urbanização nova vida, Rua nº 50 E106, 2º Andar, Apt 2.2</p>
+                  </div>
+                </li>
+              </ul>
+              
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31532.58435183798!2d13.1768265897762!3d-8.919223987757126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f5bc2dd3cd09%3A0x7b9e4d9887a58df9!2sNossoffice%20%26%20Coworking!5e0!3m2!1spt-PT!2sao!4v1655121062836!5m2!1spt-PT!2sao"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-4 offset-md-2 mb-90">
+              <h5>Preencha os campos do formulário</h5>
+              <form method="post" class="contact__form" action="mail.php">
+                <!-- Form message -->
+                <!-- <div class="row">
+                  <div class="col-12">
+                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                      Your message was sent successfully.
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Form elements -->
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input name="name" type="text" placeholder="Nome *" required>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input name="email" type="email" placeholder="Email *" required>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input name="phone" type="number" placeholder="Número *" required>
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <input name="subject" type="text" placeholder="Assunto *" required>
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Mensagem *"
+                      required></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <input name="submit" type="submit" value="Enviar">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer class="main-footer">
+        <div class="container call-action">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="contact-info">
+                <div class="section-subtitle">Informação de contactos</div>
+                <p class="mb-0"></p>
+                <p class="mb-0">+244 939 423 267</p>
+                <p class="mb-60"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <p>Copyright © 2022. uniTuenda All right reserved.</p>
+              </div>
+              <div class="col-md-4">
+                <ul class="social">
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <p><a href="#">Privacy Policy</a> <span>|</span> <a href="#">Terms of Use</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="main-footer-bg main-footer-bottom"> <img src="img/banner.jpg" alt="background">
+        <div class="main-footer-bg-overlay"></div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 150,
+      });
+    </script>
 </body>
 
 </html>

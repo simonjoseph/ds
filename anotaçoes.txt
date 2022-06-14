@@ -1,0 +1,14 @@
+Rodape --> new os links os serviços...{
+	Endereço (email, numero, localização)
+	Redes socias(Whatsapp e facebook(preparado))
+	lista de serviços
+	Pagina de contactos
+}
+contactos --> sai da home
+
+nos que nos move no saber mais abrir o texto com as demais informação sem sair da home
+[sem animação]
+
+video automação foi para a pag dos serviços
+
+texto
