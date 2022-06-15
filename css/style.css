@@ -1,9 +1,17 @@
 :root{
     --bg-main: #0a5d89;
+    --bg-sec: #12728A;
+    --bg-info: #ac8246;
+    --bg-nav: #fff;
+    --bg-img: #1A1A40;
+    --bg-body2: #f4f4f4;
+    --bg-transp: transparent;
+    /* --bg-pri: #0a5d89; */
     /* --bg-main: #1A1A40; */
-    --bg-body: #1e1e1e;
+    --bg-body: #fff;
     /* --bg-body: #1e1e1e; */
-    --bg-color: #63d3ee;
+    --bg-color: #000187;
+    /* --bg-color: #63d3ee; */
 }
 
 /* ======= Google fonts (Oswald & Didact Gothic) ======= */
@@ -34,14 +42,14 @@ body {
     line-height: 1.75em;
     color: #999;
     overflow-x: hidden !important;
-    background: var(--bg-main);
+    background: var(--bg-body);
 }
 p {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.75em;
-    color: #fff;
+    color: #555;
     margin-bottom: 20px;
     letter-spacing: 0.25px;
 }
@@ -449,17 +457,20 @@ hr {
 .section-padding {
     padding: 120px 0;
 }
+
 .section-padding2 {
     padding: 0 0 120px 0;
     position: relative;
 }
+
 .section-title {
     text-transform: uppercase;
     font-size: 45px;
     line-height: 1.25em;
     letter-spacing: 3px;
     font-family: 'Oswald', sans-serif;
-    color: #fff;
+    color: #555;
+    font-weight: 300;
     position: relative;
     margin-bottom: 20px;
 }
@@ -533,7 +544,7 @@ hr {
     font-weight: 300;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--bg-info);
     margin: 5px 5px;
     -webkit-transition: all .4s;
     transition: all .4s;
@@ -549,7 +560,7 @@ hr {
     color: var(--bg-color) !important;
 }
 .nav-scroll {
-    background: var(--bg-main);
+    background: var(--bg-nav);
     padding: 0 0 0 0;
     position: fixed;
     top: -100px;
@@ -561,7 +572,7 @@ hr {
     transition: transform .5s, -webkit-transform .5s;
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid var(--bg-color);
 }
 .nav-scroll .navbar-toggler-icon {
     color: var(--bg-color);
@@ -570,7 +581,8 @@ hr {
     color: var(--bg-color);
 }
 .nav-scroll .navbar-nav .nav-link {
-    color: rgba(255, 255, 250, 0.7);
+    color: var(--bg-info);
+    /* color: rgba(255, 255, 250, 0.7); */
 }
 .nav-scroll .navbar-nav .active {
     color: var(--bg-color) !important;
@@ -770,7 +782,7 @@ float: left;
     .navbar {
         padding-left: 0px;
         padding-right: 0px;
-        background: var(--bg-main);
+        background: var(--bg-transp);
         padding-top: 0px;
         padding-bottom: 0px;
         height: 80px;
@@ -1128,7 +1140,7 @@ header .video-container video{
 /*________somebody________*/
 .any {
     /* background: #0A0A20; */
-    height: 100vh;
+    height: 400px;
     color: #ffffff;
     padding: 70px 20px 35px;
     /* text-align: center; */
@@ -1138,7 +1150,7 @@ header .video-container video{
     background-image: url('../img/DS-Casa-inteligente-Automação-residencial-e-Segurança-electrónica.jpeg');
     background-position: center top;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
   }
 
@@ -1150,17 +1162,23 @@ header .video-container video{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: var(--bg-main);
+    background-color: var(--bg-img);
+    /* background-color: var(--bg-main); */
     opacity: 0.6;
+  }
+
+  .bgt-blue{
+    color: var(--bg-color);
   }
 
   .any .texto {
     color: #ffffff;
     /* font-size: 40px; */
     line-height: 42px;
+    text-align: center;
     /* margin-top: 100px; */
     /* width: 276px; */
-    margin-top: 150px;
+    /* margin-top: 150px; */
   }
 
   .any .texto h2,
@@ -1218,7 +1236,7 @@ header .video-container video{
     transition: transform 500ms ease;
 }
 .about .caption {
-    background: var(--bg-main);
+    background: var(--bg-body);
     position: absolute;
     top: 50%;
     width: 50%;
@@ -1497,7 +1515,9 @@ header .video-container video{
 
 
 /* ======= Projects style ======= */
-.projects {}
+.projects {
+    background:var(--bg-body2);
+}
 .projects h4 {
     text-transform: uppercase;
     font-size: 45px;
@@ -2720,7 +2740,7 @@ header .video-container video{
     bottom: 0;
     left: 100%;
     z-index: 1;
-    background: #323232;
+    background: var(--bg-info);
     color: #fff;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -3033,6 +3053,19 @@ header .video-container video{
     .nav-scroll .logo-wrapper {
      padding-left: 15px; 
 }
+
+.nav-scroll .logo-wrapper .logo img {
+    width: 60px;
+}
+
+.any .texto h2, .any .texto h3 {
+    font-size: 30px;
+}
+
+.logo-wrapper .logo img {
+    width: 60px;
+}
+
     .nav-scroll .logo {}
     .logo-img {
         margin-bottom: 0px;
@@ -3056,7 +3089,7 @@ header .video-container video{
     
     .navbar .container {
         max-width: 100%;
-        background: var(--bg-main);
+        background: var(--bg-transp);
     }
     .navbar .navbar-collapse {
         max-height: 360px;

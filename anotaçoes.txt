@@ -5,6 +5,7 @@ Rodape --> new os links os serviços...{
 	Pagina de contactos
 }
 contactos --> sai da home
+Serviços cada services terá  a sua propia pag.
 
 nos que nos move no saber mais abrir o texto com as demais informação sem sair da home
 [sem animação]
@@ -12,3 +13,35 @@ nos que nos move no saber mais abrir o texto com as demais informação sem sair
 video automação foi para a pag dos serviços
 
 texto
+home no ds - casa inteligente fazer animação ao texto de move
+já na folha 2 Sua residencia conectada, prática e segura. 
+Fazer como no infotech.ao (Sua residencia estática e já na conectada prática e segura 
+é para indo mudando uma a seguir a outra).
+
+cores do site mudar 
+
+BLog mudar fazer diferente (inovar)
+
+De momento só terá tres link home, serviços e contacte-nos.
+
+infotech.ao são os concorrentes
+Site não tem que ser quadrado
+
+animações nos botão de call action
+
+menu(Áreas de actuação --> Sector Empresaria(foto dentro do escritorio) e Sector Residencial ( img nas residencias inteligentes) drop down -> e ver os&filhos )
+
+XMind -> (see more)
+
+
+Domingo -> de noite pag home, services e contact feitas para o client analisar 
+
+
+servicos
+
+casa inteligente
+Segurança electronica
+Home Theater
+Audio e video
+HVAC
+Criação de projecto
