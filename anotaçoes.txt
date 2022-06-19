@@ -18,7 +18,11 @@ já na folha 2 Sua residencia conectada, prática e segura.
 Fazer como no infotech.ao (Sua residencia estática e já na conectada prática e segura 
 é para indo mudando uma a seguir a outra).
 
-cores do site mudar 
+cores do site mudar #123 ->4 ou 5
+
+
+token -> no mobile 
+
 
 BLog mudar fazer diferente (inovar)
 
