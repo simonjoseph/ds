@@ -955,7 +955,7 @@ float: left;
         height: 80px;
     }
     .nav-scroll {
-        background: var(--bg-main);
+        background: var(--bg-nav);
     }
     .logo-wrapper {
         float: left;
@@ -964,7 +964,7 @@ float: left;
     }
     .nav-scroll .logo-wrapper {
         padding: 15px;
-        background-color: var(--bg-main);
+        background-color: var(--bg-nav);
     }
 }
 @media screen and (max-width: 991px) {
@@ -1395,7 +1395,7 @@ header .video-container video{
   }
 
   .any-suporte {
-    height: 700px;
+    height: 600px;
     background-image: url('../img/suporte.jpg');
     background-position: center top;
     background-size: cover;
@@ -1403,8 +1403,8 @@ header .video-container video{
     background-repeat: no-repeat;
   }
   .any-tablet {
-    height: 700px;
-    background-image: url('../img/Satel3.jpg');
+    height: 100vh;
+    background-image: url('../img/smart-home.jpg');
     background-position: center top;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -1413,7 +1413,7 @@ header .video-container video{
 
   .prop{
     background: #0A0A20; 
-    height: 416px;
+    height: 316px;
     color: #ffffff;
     padding: 70px 20px 35px;
     text-align: center;
@@ -1713,6 +1713,23 @@ span.bgt-info{
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
+    .card-about {
+        position: relative;
+        top: 0;
+        width: auto;
+        padding: 30px 0px;
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .card-about.active {
+        width: auto;
+    }
+
+    .about.activ {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
 
 
@@ -1942,6 +1959,9 @@ span.bgt-info{
     position: relative;
     display: block;
     margin-bottom: 15px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
 }
 .projects-img {
     position: relative;
@@ -2486,7 +2506,7 @@ span.bgt-info{
   }
   
   .redes-icon-btn.youtube {
-    --redeSocial-color: #cc181e;
+    --redeSocial-color: var(--bg-sec);
   }
   
   .redes-icon-btn.youtube i {
@@ -2494,7 +2514,7 @@ span.bgt-info{
   }
   
   .redes-icon-btn.instagram {
-    --redeSocial-color: #d6249f;
+    --redeSocial-color: var(--bg-info);
   }
   
   .redes-icon-btn.twitter {
@@ -3549,19 +3569,20 @@ span.bgt-info{
     width: 100px;
   }
 
-  .about__img-two {
+  /* .about__img-two {
     width: 430px;
-}
+} */
 
 .bg-ab{
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 24px 31px 15px rgb(0 0 0 / 5%);
-    width: 480px;
+    /* width: 480px; */
 }
 
 .header-bg-parent{
-    height: 600px;
+    height: auto;
+    /* height: 600px; */
 }
 
   /* @media screen and (min-width: 1024px){
@@ -3941,7 +3962,6 @@ span.bgt-info{
     outline: none;
 }
 
-
 /* ======= Responsive style ======= */
 
 @media (min-width: 1200px){
@@ -3993,7 +4013,8 @@ span.bgt-info{
     .navbar button:active,
     .navbar button:focus,
     .navbar button:hover {
-        background: var(--bg-main);
+        background: transparent;
+        /* background: var(--bg-main); */
         outline: none;
         color: transparent !important;
         border: 1px solid var(--bg-main);
@@ -4114,6 +4135,21 @@ span.bgt-info{
     .footer {
         padding: 60px 0;
     }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar .navbar-nav .nav-link {
+        font-size: 15px;
+        /* font-weight: 300; */
+        /* font-family: 'Oswald', sans-serif; */
+        /* text-transform: uppercase; */
+        /* color: var(--bg-info); */
+        margin: 0px;
+        /* -webkit-transition: all .4s; */
+        /* transition: all .4s; */
+        letter-spacing: 1px;
+    }
+    
 }
 
 
