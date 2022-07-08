@@ -2488,6 +2488,7 @@ span.bgt-info {
     font-size: 30px;
     text-align: center;
     word-break: break-all;
+    margin: 0 auto;
 }
 
 /* ======= Projects 2 style ======= */
