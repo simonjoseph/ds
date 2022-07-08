@@ -14,6 +14,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/DS-Casa-Inteligente-Logo-tipo.ico" type="image/x-icon">
   <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <style>
+    body{
+      background:#e8e8e8
+    }
+  </style>
 </head>
 
 <body>
@@ -48,17 +53,14 @@
               href="index.html">Inicio</a></li>
 
           <li data-aos="zoom-in-left" data-aos-delay="450" class="nav-item"><a class="nav-link"
-              href="#projects">Projectos</a></li>
+              href="index.html">Projectos</a></li>
 
           <li data-aos="zoom-in-left" data-aos-delay="600" class="nav-item"><a class="nav-link"
               href="services.html">Serviços</a></li>
 
           <li data-aos="zoom-in-left" data-aos-delay="750" class="nav-item"><a class="nav-link"
-              href="index.html">Áreas de actuação</a></li>
-
-          <li data-aos="zoom-in-left" data-aos-delay="900" class="nav-item"><a class="nav-link"
-              href="blog.html">Blog</a></li>
-          <li data-aos="zoom-in-left" data-aos-delay="1150" class="nav-item"><a class="nav-link active"
+              href="index.html">Blog</a></li>
+          <li data-aos="zoom-in-left" data-aos-delay="900" class="nav-item"><a class="nav-link active"
               href="contact.html">Contacte-nos</a></li>
         </ul>
       </div>
@@ -69,21 +71,21 @@
   <!-- Content -->
   <div class="content-wrapper">
     <!-- Header Banner section -->
-    <section class="banner-header banner-img section-padding valign bg-img bg-fixed" data-overlay-darkgray="1"
+    <section class="banner-header banner-img banner-img-contact section-padding valign bg-img bg-fixed" data-overlay-darkgray="1"
       data-background="img/suporte.jpg">
-      <a href="#contacti" class="scroll-down" id="cf">
+      <!-- <a href="#contacti" class="scroll-down" id="cf">
         <div class="mouse">
           <span></span>
         </div>
         <div class="arrow">
           <span></span>
         </div>
-      </a>
+      </a> -->
       <div class="container">
         <h1 class="text-center">
           Contacte-nos
         </h1>
-        <h4 class="text-center text-light">A nossa equipe está pronta para lhe apoiar</h4>
+        <!-- <h4 class="text-center text-light">A nossa equipe está pronta para lhe apoiar</h4> -->
         
       </div>
       
@@ -147,45 +149,49 @@
         </div>
         <!--  -->
 
-              <div class="col-md-8 offset-md-2 ">
-                  <h5 class="text-dark" >Escreve a sua Mensagem</h5>
-                  <form method="post" class="contact__form" action="mail.php">
-                      <!-- Form message -->
-                      <div class="row">
-                          <div class="col-12">
-                              <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                  Tua mensagem foi enviada com sucesso.
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Form elements -->
-                      <div class="row">
-                          <div class="col-md-12 form-group">
-                              <input name="name" type="text" placeholder="Seu Nome *" required> 
-                          </div>
-                          <div class="col-md-6 form-group">
-                              <input name="email" type="email" placeholder="Seu Email *" required> 
-                          </div>
-                          <div class="col-md-6 form-group">
-                              <input name="phone" type="number" placeholder="Seu Número *" required> 
-                          </div>
-                          <div class="col-md-12 form-group">
-                              <input name="subject" type="text" placeholder="Assunto *" required> 
-                          </div>
-                          <div class="col-md-12 form-group">
-                              <textarea name="message" id="message" cols="30" rows="4" placeholder="Messagem *" required></textarea>
-                          </div>
-                          <div class="col-md-12">
-                              <input name="submit" type="submit"  value="Enviar Menssagem">
-                          </div>
-                      </div>
-                  </form>
-              </div>
+              
           </div> 
       </div>
   </section>
+
+  <section class="news-cont pb-md-5">
+    <div class="col-md-8 offset-md-2 ">
+      <h5 class="text-dark" >Escreve a sua Mensagem</h5>
+      <form method="post" class="contact__form" action="mail.php">
+          <!-- Form message -->
+          <div class="row">
+              <div class="col-12">
+                  <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                      Tua mensagem foi enviada com sucesso.
+                  </div>
+              </div>
+          </div>
+          <!-- Form elements -->
+          <div class="row">
+              <div class="col-md-12 form-group">
+                  <input name="name" type="text" placeholder="Seu Nome *" required> 
+              </div>
+              <div class="col-md-6 form-group">
+                  <input name="email" type="email" placeholder="Seu Email *" required> 
+              </div>
+              <div class="col-md-6 form-group">
+                  <input name="phone" type="number" placeholder="Seu Número *" required> 
+              </div>
+              <div class="col-md-12 form-group">
+                  <input name="subject" type="text" placeholder="Assunto *" required> 
+              </div>
+              <div class="col-md-12 form-group">
+                  <textarea name="message" id="message" cols="30" rows="4" placeholder="Messagem *" required></textarea>
+              </div>
+              <div class="col-md-12">
+                  <input name="submit" type="submit"  value="Enviar Menssagem">
+              </div>
+          </div>
+      </form>
+  </div>
+  </section>
   <!--  -->
-  <div class=" call-action call-img ">
+  <div class=" call-action call-img mt-5">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -212,7 +218,7 @@
   </section>
 
    <!--==================== FOOTER ====================-->
-   <footer class="footer mt-30">
+   <footer class="footer">
     <div class="footer__container container grid">
         <div class="footer__content grid">
             <div class="footer__data">
@@ -285,7 +291,7 @@
                 <h3 class="footer__subtitle">Serviços</h3>
                 <ul>
                     <li class="footer__item">
-                        <a href="" class="footer__link">Casa Inteligente</a>
+                        <a href="smartHouse.html" class="footer__link">Casa Inteligente</a>
                     </li>
                     <li class="footer__item">
                         <a href="" class="footer__link">Home Theater</a>
@@ -300,7 +306,7 @@
                         <a href="" class="footer__link">HVAC</a>
                     </li>
                     <li class="footer__item">
-                        <a href="" class="footer__link">Projecto</a>
+                        <a href="" class="footer__link">Criação de Projecto</a>
                     </li>
                 </ul>
             </div>
@@ -309,9 +315,9 @@
 
         <div class="footer__rights">
             <p class="footer__copy">&#169; 2022 DS - Casa Inteligente. Todos os direitos reservados.</p>
-            <div class="footer__terms">
+            <!-- <div class="footer__terms">
                 <a href="unituenda.ao" class="footer__terms-link">Powered by <span>uniTuenda</span> </a>
-            </div>
+            </div> -->
         </div>
     </div>
 </footer>
