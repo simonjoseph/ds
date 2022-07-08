@@ -865,7 +865,7 @@ hr {
 }
 
 .nav-scroll .navbar-nav .nav-link {
-    color: var(--bg-info);
+    color: #3f3b36;
     /* color: rgba(255, 255, 250, 0.7); */
 }
 
@@ -2489,6 +2489,62 @@ span.bgt-info {
     text-align: center;
     word-break: break-all;
     margin: 0 auto;
+}
+
+/* body {
+	font-family: candara;
+	background: #fffdf5;
+	color: #3f3f5a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+} */
+
+blockquote {
+	font-weight: bolder;
+	font-size: 2rem;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+    color: #3f3f5a;
+	margin: 0;
+	padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: var(--bg-ciano);
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
+}
+
+.divblock{
+    /* background: #fffdf5; */
+	color: #3f3f5a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+cite {
+	line-height: 3;
+	text-align: left;
 }
 
 /* ======= Projects 2 style ======= */
