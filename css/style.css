@@ -821,7 +821,7 @@ hr {
     font-weight: 300;
     font-family: Candara;
     text-transform: uppercase;
-    color: var(--bg-info);
+    color: var(--bg-body);
     margin: 5px 5px;
     -webkit-transition: all .4s;
     transition: all .4s;
@@ -1270,6 +1270,10 @@ hr {
     margin: 10px 15px;
 }
 
+.header .video-container {
+    /* background: red; */
+    z-index: 3;
+}
 header .video-container video {
     position: absolute;
     top: 0;
@@ -1278,12 +1282,20 @@ header .video-container video {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    /* background-color: red; */
 }
 
 .vid video {
     height: 100vh;
     width: 100%;
     object-fit: cover;
+}
+
+header .video-container .video-bg{
+    background-color: #000;
+    opacity: 0.5;
+    height: 100vh;
+    width: 100%;
 }
 
 
@@ -2761,7 +2773,7 @@ span.bgt-info {
 }
 
 .card-services{
-    margin-block-start: -200px;
+    margin-block-start: -270px;
 }
 
 .triangle_shape_2 {
@@ -3162,8 +3174,13 @@ span.bgt-info {
 
 /*_______Redes_______*/
 .results {
-    background: var(--bg-main);
-    padding-top: 160px;
+    background: var(--bg-new);
+    padding-top: 40px;
+    height: 500px;
+}
+
+.card-img-top{
+    height: 330px;
 }
 
 .content-results {
@@ -3322,7 +3339,7 @@ span.bgt-info {
 }
 
 .slid-bg {
-    background: var(--bg-body2);
+    background: var(--bg-body);
 }
 
 .vini-lazy-img {
