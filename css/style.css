@@ -2760,9 +2760,9 @@ span.bgt-info {
     margin-bottom: 52px;
 }
 
-/* .card-services{
-    margin-block-start: 200px;
-} */
+.card-services{
+    margin-block-start: -200px;
+}
 
 .triangle_shape_2 {
     left: auto;
