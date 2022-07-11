@@ -108,7 +108,7 @@ $(function () {
 	// $("a.vid").YouTubePopUp();
     
      // Project owlCarousel
-    if ($(".projects-carousel").length) {
+    // if ($(".projects-carousel").length) {
         $(".projects-carousel").owlCarousel({
           loop: true,
           margin: 30,
@@ -129,18 +129,12 @@ $(function () {
             600: {
               items: 1,
             },
-            800: {
-              items: 2,
-            },
             1024: {
-              items: 2,
-            },
-            1200: {
               items: 2,
             },
           },
         });
-    }
+    // }
     
     // Project Page owlCarousel
     $('.project-page .owl-carousel').owlCarousel({
