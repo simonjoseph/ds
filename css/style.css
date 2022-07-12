@@ -332,7 +332,7 @@ textarea:focus {
     margin-bottom: 2rem;
     background-color: var(--bg-new);
     /* box-shadow: 0 6px 8px rgba(15, 99, 176, 0.4); */
-    border-radius: 6px;
+    /* border-radius: 6px; */
     transition: .4s;
     height: 156.5px;
 }
@@ -1371,11 +1371,12 @@ s .video__descriptions {
 }
 
 .abt-col {
-    background-color: #fff;
+    background-color: var(--bg-body);
     box-shadow: 0 0 10px rgb(21 87 153 / 28%);
     padding: 25px 20px 19px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     transition: all .4s ease-in-out;
+    height: 200px;
 }
 
 .abt-col>img {
@@ -1848,7 +1849,7 @@ span.bgt-info {
 /* ======= About style ======= */
 .about {
     position: relative;
-    background: var(--bg-new);
+    background: var(--bg-body);
     /* margin-bottom: 90px; */
     /* margin-top: 100px;
     margin-bottom: 100px; */
@@ -1897,11 +1898,19 @@ span.bgt-info {
     transform: translate(0, -50%);
 }
 
-.about.left .caption {
+.about.left .caption{
     left: auto;
     right: 0;
     background: var(--bg-main);
     padding: 5% 0% 5% 4%;
+}
+
+.left-vid{
+    /* margin-block-start: 20px; */
+    /* margin-inline-start: 600px; */
+    position: absolute;
+    right: -200px;
+    padding-top: 50px;
 }
 
 .about.left .caption h4 {
@@ -1966,14 +1975,15 @@ span.bgt-info {
 .card-about {
     position: relative;
     width: 50%;
-    padding: 20px;
+    /* padding: 20px; */
     /* margin: 20px; */
     position: absolute;
     background: var(--bg-new);
     /* background: var(--bg-body); */
     top: 50%;
     /* width: 50%; */
-    padding: 5% 4% 5% 0%;
+    /* padding: 5% 4% 5% 0%; */
+    padding: 5% 4% 5% 1%;
     -ms-transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -4749,7 +4759,7 @@ svg .polygon {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .3);
-    border-radius: 20px;
+    /* border-radius: 20px; */
     opacity: 0;
     visibility: hidden;
     transition: all .4s ease-in-out
@@ -4757,7 +4767,7 @@ svg .polygon {
 
 .blog-post .blog-thumbnail>a img,
 .blog-post .blog-thumbnail>img {
-    border-radius: 20px
+    /* border-radius: 20px */
 }
 
 .blog-post .blog-thumbnail .category {
@@ -4770,7 +4780,7 @@ svg .polygon {
     height: 38px;
     line-height: 24px;
     background-color: var(--bg-new);
-    border-radius: 30px
+    /* border-radius: 30px */
 }
 
 .blog-post:hover .blog-thumbnail:before {
@@ -6098,7 +6108,7 @@ svg .polygon {
 
 .footer__social {
     font-size: 1.25rem;
-    color: var(--bg-ciano);
+    color: var(--bg-new);
     margin-right: var(--mb-1-25);
 }
 
