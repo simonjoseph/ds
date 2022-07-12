@@ -2019,6 +2019,7 @@ span.bgt-info {
     position: absolute;
     right: -200px;
     padding-top: 50px;
+    padding-left: 40px;
 }
 
 .about.left .caption h4 {
@@ -2119,7 +2120,7 @@ span.bgt-info {
 
 .card-caption {
     position: relative;
-    height: 280px;
+    height: 290px;
     overflow: hidden;
     padding-left: 30px;
 }
@@ -2134,7 +2135,7 @@ span.bgt-info {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 40px;
     background: linear-gradient(transparent, var(--bg-new))
         /* background: linear-gradient(transparent, #fff); */
 }
@@ -2144,7 +2145,8 @@ span.bgt-info {
 }
 
 .card-caption p {
-    color: white
+    color: white;
+    text-align: initial;
 }
 
 .more {
@@ -3041,6 +3043,10 @@ cite {
 
 .service-bg1 {
     background: hsl(240deg 66% 19%);
+    position: relative;
+}
+.service-bg2 {
+    background: var(--bg-new);
     position: relative;
 }
 
