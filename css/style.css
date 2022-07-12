@@ -1854,10 +1854,10 @@ span.bgt-info {
     margin-bottom: 100px; */
 }
 
-.about.activ {
+/* .about.activ {
     margin-top: 20px;
     margin-bottom: 100px;
-}
+} */
 
 .about:last-child {
     margin-bottom: 0px;
@@ -1967,7 +1967,7 @@ span.bgt-info {
     position: relative;
     width: 50%;
     padding: 20px;
-    margin: 20px;
+    /* margin: 20px; */
     position: absolute;
     background: var(--bg-new);
     /* background: var(--bg-body); */
@@ -1986,18 +1986,18 @@ span.bgt-info {
     top: 0;
     right: 0;
     border: 20px solid transparent;
-    border-top: 20px solid var(--bg-main);
-    border-right: 20px solid var(--bg-main);
+    /* border-top: 20px solid var(--bg-main);
+    border-right: 20px solid var(--bg-main); */
 }
 
 .card-about.active {
     width: 100%;
 }
 
-.card-about.active::before {
+/* .card-about.active::before {
     border-top: 20px solid var(--bg-info);
     border-right: 20px solid var(--bg-info);
-}
+} */
 
 .card-caption {
     position: relative;
