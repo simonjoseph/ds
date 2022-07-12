@@ -2121,6 +2121,7 @@ span.bgt-info {
     position: relative;
     height: 280px;
     overflow: hidden;
+    padding-left: 30px;
 }
 
 .card-about.active .card-caption {
@@ -3788,6 +3789,7 @@ only screen and (max-width: 320px) {
 
 .card-img-top {
     height: 330px;
+    object-fit: cover;
 }
 
 .content-results {
