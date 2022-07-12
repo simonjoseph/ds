@@ -2151,6 +2151,7 @@ span.bgt-info {
 
 .more {
     position: relative;
+    margin-top: 30px;
     padding: 10px 15px;
     background: var(--bg-main);
     color: #fff;
