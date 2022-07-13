@@ -1113,7 +1113,7 @@ hr {
         background: var(--bg-transp);
         padding-top: 0px;
         padding-bottom: 0px;
-        height: 80px;
+        height: 91px;
     }
 
     .nav-scroll {
@@ -1963,10 +1963,15 @@ span.bgt-info {
     margin-bottom: 100px; */
 }
 
-/* .about.activ {
-    margin-top: 20px;
-    margin-bottom: 100px;
-} */
+.about.activ {
+    /* margin-top: 20px; */
+    /* margin-bottom: 100px; */
+    background: var(--bg-new);
+}
+.about.activ .card-caption {
+    padding-left: 0px;
+    padding: 20px;
+}
 
 .about:last-child {
     margin-bottom: 0px;
@@ -3363,7 +3368,38 @@ cite {
 .service_area .service_slider_section .service_box .service_content p {
     line-height: 36px;
     font-weight: 400;
-    color: #7b8083;
+    color: #fff;
+    position: absolute;
+    top: -150px;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.bg-ser{
+    position: absolute;
+    top: -224px;
+    left: 0px;
+    background: #00000080;
+    width: 100%;
+    height: 224px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.service_area .service_slider_section .service_box:hover .service_content p{
+    opacity: 1;
+    visibility: visible;
+}
+.service_area .service_slider_section .service_box:hover .service_content .bg-ser{
+    opacity: 1;
+    visibility: visible;
 }
 
 .service_area .service_slider_section .service_box .service_content .service_btn {
@@ -3373,9 +3409,9 @@ cite {
     /* font-size: 24px; */
     color: #ffffff;
     background: var(--bg-ciano);
-    -webkit-border-radius: 8px;
+    /* -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    border-radius: 8px;
+    border-radius: 8px; */
     text-align: center;
     line-height: 65px;
     left: 50%;
@@ -4559,7 +4595,7 @@ only screen and (max-width: 320px) {
     top: 0;
     width: 100%;
     height: 100%;
-    padding: 2.7rem;
+    padding: .5rem;
     color: #999;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -4657,6 +4693,15 @@ only screen and (max-width: 320px) {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+
+    background: var(--bg-body2);
+    border-radius: 30%;
+    /* height: 84%;
+    margin: 10px;
+    position: absolute;
+    width: 84%;
+    vertical-align: middle;
+    z-index: 1; */
 }
 
 .news-hover .time {
@@ -5734,7 +5779,7 @@ svg .polygon {
     z-index: 999999;
     border-radius: 50%;
     top: 3em;
-    right: 3em;
+    right: 5em;
     width: 3em;
     height: 3em;
     transition: .75s;
@@ -6029,7 +6074,7 @@ svg .polygon {
 
 .content {
     background: var(--bg-body2);
-    border-radius: 30%;
+    /* border-radius: 30%; */
     height: 84%;
     margin: 10px;
     position: absolute;
@@ -6045,7 +6090,7 @@ svg .polygon {
 
 .effect-1,
 .effect-2 {
-    border-radius: 30%;
+    /* border-radius: 30%; */
     display: none;
     mix-blend-mode: multiply;
     height: 84%;
@@ -6094,7 +6139,7 @@ svg .polygon {
 
 .exercise {
     background-image: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     height: 50%;
     margin: 25%;
     width: 50%;
@@ -6105,7 +6150,7 @@ svg .polygon {
 
 .sleep {
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     height: 50%;
     margin: 25%;
     width: 50%;
@@ -6113,7 +6158,7 @@ svg .polygon {
 
 .meditation {
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     height: 40%;
     margin: 30%;
     transform: rotate(45deg);
@@ -6772,6 +6817,25 @@ svg .polygon {
         padding: 0;
         width: auto;
         margin: 0px 0;
+    }
+
+    .card-caption {
+        padding-left: 0px;
+        padding: 10px;
+    }
+
+    .about .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .left-vid {
+        /* margin-block-start: 0px; */
+        /* margin-inline-start: 0px; */
+        position: relative;
+        right: -0px;
+        padding-top: 0px;
+        padding-left: 0px;
     }
 }
 
