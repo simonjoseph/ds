@@ -487,19 +487,19 @@ A Formação continua dos nossos colaboradores, o estabelecimento de parcerias d
                 <a href="smartHouse.html" class="footer__link">Casa Inteligente</a>
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">Home Theater</a>
+                <a href="homeTheater.html" class="footer__link">Home Theater</a>
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">Áudio e Vídio</a>
+                <a href="audioVisual.html" class="footer__link">Áudio e Vídio</a>
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">Segurança Electrónica</a>
+                <a href="securityElectronic.html" class="footer__link">Segurança Electrónica</a>
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">Criação de Projecto</a>
+                <a href="criacaoProjecto.html" class="footer__link">Criação de Projecto</a>
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">HVAC</a>
+                <a href="HVAC.html" class="footer__link">HVAC</a>
               </li>
             </ul>
           </div>
@@ -531,10 +531,12 @@ A Formação continua dos nossos colaboradores, o estabelecimento de parcerias d
 
     let aboutActive = document.getElementById('aboutActive')
     let more = document.querySelectorAll('.more');
+    let hiddenActive = document.getElementById('hidden-active');
     for (let i = 0; i < more.length; i++) {
       more[i].addEventListener('click', () => {
         more[i].parentNode.classList.toggle('active')
         aboutActive.classList.toggle('activ')
+        hiddenActive.classList.toggle('activeP')
       })
     }
   </script>
