@@ -48,10 +48,13 @@ $(function () {
 			navbar.addClass("nav-scroll");
 			// logo.attr('src', 'img/logo.png');
 			logo.attr('src', 'img/logo2.png');
+            console.log(bodyScroll);
 		}
 		else {
 			navbar.removeClass("nav-scroll");
 			logo.attr('src', 'img/logo.png');
+            console.log(bodyScroll);
+
 		}
 	});
     

@@ -225,20 +225,10 @@
               <div class="card-body">
                 <h1 class="card-title service-ti">Sua residência </h1>
 
-                <h5  style="font-size: 20px; color: #fff;" >Conectada</h5>
-                <h5 style="font-size: 20px; color: #fff;">Prática</h5>
-                <h5 style="font-size: 20px; color: #fff;">e Segura</h5>
-                <!-- <div class="css-typing">
-                  <p>
-                    Conectada,
-                  </p>
-                  <p>
-                    Prática
-                  </p>
-                  <p>
-                    e Segura
-                  </p>
-                </div> -->
+                <h5 id="typeId" style="font-size: 20px; color: #fff;">Conectada</h5>
+                <h5 id="typeId1" style="font-size: 20px; color: #fff;">Prática</h5>
+                <h5 id="typeId2"  style="font-size: 20px; color: #fff;">e Segura</h5>
+
                 <!-- <p class="text-light" style="font-size: 26px" >Conectada,</p>
                 <p class="text-light" style="font-size: 26px" >Prática</p>
                 <p class="text-light" style="font-size: 26px" >e Segura</p> -->
@@ -484,6 +474,31 @@
       duration: 800,
       offset: 150,
     });
+
+    // let typeId = document.getElementById('typeId');
+
+    window.onscroll = function () {
+      myFunction()
+      myFunction1()
+      myFunction2()
+    };
+
+    function myFunction() {
+      if (document.documentElement.scrollTop > 1350) {
+        document.getElementById("typeId").className = "type-text";
+      }
+    }
+
+    function myFunction1() {
+      if (document.documentElement.scrollTop > 2304) {
+        document.getElementById("typeId1").className = "type-text1";
+      }
+    }
+    function myFunction2() {
+      if (document.documentElement.scrollTop > 2304) {
+        document.getElementById("typeId2").className = "type-text2";
+      }
+    }
 
     let aboutActive = document.getElementById('aboutActive')
     let more = document.querySelectorAll('.more');

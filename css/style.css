@@ -3105,6 +3105,82 @@ cite {
     margin-bottom: 52px;
 }
 
+/* __________________ */
+
+.type-text, .type-text1, .type-text2{
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    font-weight: 300;
+    position: relative;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    position: relative;
+  
+    width: max-content; 
+  }
+  
+  .type-text::before,
+  .type-text::after,
+  .type-text1::before,
+  .type-text1::after,
+  .type-text2::before,
+  .type-text2::after
+  {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .type-text::before,
+  .type-text1::before,
+  .type-text2::before
+  {
+    background: var(--bg-new);
+    animation: typewriter1 6s steps(42) 1s forwards;
+  }
+  
+  .type-text::after,
+  .type-text1::after,
+  .type-text2::after
+  {
+    width: .125em;
+    background: var(--bg-new);
+    animation: typewriter1 6s steps(42) 1s forwards,
+    blink 750ms steps(42) infinite;
+  }
+  
+  /* .subtitle{
+    color: hsl(0 0% / 0.7);
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewritterSeepd) + 2s) forwards;
+  } */
+  
+  @keyframes typewriter1{
+    to{
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink1{
+    to{
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp1{
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/*____________________*/
+
 /* .css-typing p {
     border-right: .15em solid orange;
     font-family: "Courier";
