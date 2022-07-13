@@ -1391,7 +1391,7 @@ s .video__descriptions {
     top: -16px;
     right: -16px;
     background: var(--bg-ciano);
-    
+
     transform: scale(1);
     transform-origin: 50% 50%;
     transition: transform 0.80s ease-out;
@@ -1416,7 +1416,7 @@ s .video__descriptions {
     color: #ffffff;
 }
 
-.abt-col:hover p{
+.abt-col:hover p {
     color: #fff;
 }
 
@@ -1928,7 +1928,7 @@ s .video__descriptions {
     margin-bottom: 2px;
 }
 
-.text-font{
+.text-font {
     font-size: 2.5rem;
 }
 
@@ -1980,6 +1980,7 @@ span.bgt-info {
     padding-bottom: 100px;
     background: var(--bg-new);
 }
+
 .about.activ .card-caption {
     padding-left: 0px;
     padding: 20px;
@@ -2030,7 +2031,7 @@ span.bgt-info {
     padding: 5% 0% 5% 4%;
 }
 
-.activeP{
+.activeP {
     display: none;
 }
 
@@ -3067,12 +3068,15 @@ cite {
     background: hsl(240deg 66% 19%);
     position: relative;
 }
+
 .service-bg2 {
     background: var(--bg-new);
     position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.service-bg3{
+.service-bg3 {
     background-color: var(--bg-new);
     /* padding: 10px; */
 }
@@ -3094,6 +3098,7 @@ cite {
     color: #fff;
     font-size: 40px;
     font-weight: 500;
+    font-family: Candara;
 }
 
 .service-cemter p {
@@ -3107,50 +3112,68 @@ cite {
 
 /* __________________ */
 
-.type-text, .type-text1, .type-text2{
+.type-text,
+.type-text1,
+.type-text2 {
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     font-weight: 300;
     position: relative;
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     position: relative;
-  
-    width: max-content; 
-  }
-  
-  .type-text::before,
-  .type-text::after,
-  .type-text1::before,
-  .type-text1::after,
-  .type-text2::before,
-  .type-text2::after
-  {
+    width: max-content;
+    font-family: Candara;
+}
+
+.type-text::before,
+.type-text::after,
+.type-text1::before,
+.type-text1::after,
+.type-text2::before,
+.type-text2::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-  }
-  
-  .type-text::before,
-  .type-text1::before,
-  .type-text2::before
-  {
+}
+
+.type-text::before{
     background: var(--bg-new);
     animation: typewriter1 6s steps(42) 1s forwards;
-  }
-  
-  .type-text::after,
-  .type-text1::after,
-  .type-text2::after
-  {
+}
+
+.type-text1::before {
+    background: var(--bg-new);
+    animation: typewriter2 calc(6s + 6s) steps(42) 2s forwards;
+}
+
+.type-text2::before {
+    background: var(--bg-new);
+    animation: typewriter3 calc(6s + 8s) steps(42) 3s forwards;
+}
+
+.type-text::after{
     width: .125em;
     background: var(--bg-new);
     animation: typewriter1 6s steps(42) 1s forwards,
-    blink 750ms steps(42) infinite;
-  }
-  
-  /* .subtitle{
+        blink 750ms steps(42) infinite;
+}
+
+.type-text1::after {
+    width: .125em;
+    background: var(--bg-new);
+    animation: typewriter2 calc(6s + 6s) steps(42) 2s forwards,
+        blink 750ms steps(42) infinite;
+}
+
+.type-text2::after {
+    width: .125em;
+    background: var(--bg-new);
+    animation: typewriter3 calc(6s + 8s) steps(42) 3s forwards,
+        blink 750ms steps(42) infinite;
+}
+
+/* .subtitle{
     color: hsl(0 0% / 0.7);
     margin-top: 10px;
     font-size: 2rem;
@@ -3159,25 +3182,35 @@ cite {
     transform: translateY(3rem);
     animation: fadeInUp 2s ease calc(var(--typewritterSeepd) + 2s) forwards;
   } */
-  
-  @keyframes typewriter1{
-    to{
-      left: 100%;
+
+@keyframes typewriter1 {
+    to {
+        left: 100%;
     }
-  }
-  
-  @keyframes blink1{
-    to{
-      background: transparent;
+}
+@keyframes typewriter2 {
+    to {
+        left: 100%;
     }
-  }
-  
-  @keyframes fadeInUp1{
-    to{
-      opacity: 1;
-      transform: translateY(0);
+}
+@keyframes typewriter3 {
+    to {
+        left: 100%;
     }
-  }
+}
+
+@keyframes blink1 {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp1 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /*____________________*/
 
@@ -3476,7 +3509,7 @@ cite {
     transition: 0.5s;
 }
 
-.bg-ser{
+.bg-ser {
     position: absolute;
     top: -224px;
     left: 0px;
@@ -3492,11 +3525,12 @@ cite {
     transition: 0.3s;
 }
 
-.service_area .service_slider_section .service_box:hover .service_content p{
+.service_area .service_slider_section .service_box:hover .service_content p {
     opacity: 1;
     visibility: visible;
 }
-.service_area .service_slider_section .service_box:hover .service_content .bg-ser{
+
+.service_area .service_slider_section .service_box:hover .service_content .bg-ser {
     opacity: 1;
     visibility: visible;
 }
