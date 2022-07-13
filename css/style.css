@@ -3054,7 +3054,8 @@ cite {
 
 .img-4 {
     height: 350px;
-    object-fit: cover;
+    /* object-fit: contain; */
+    padding: 20px;
 }
 
 .service-bg {
@@ -3069,6 +3070,11 @@ cite {
 .service-bg2 {
     background: var(--bg-new);
     position: relative;
+}
+
+.service-bg3{
+    background-color: var(--bg-new);
+    /* padding: 10px; */
 }
 
 .service-cemter {
@@ -5835,10 +5841,10 @@ svg .polygon {
     width: 3em;
     height: 3em;
     text-shadow: 1px 0 0 var(--hmp-color);
-    background-image: linear-gradient(210deg, var(--hmp-color-5) 0, var(--hmp-color-25) 100%);
-    background-color: #fff;
+    background: var(--hmp-color);
+    /* background-color: #fff; */
     transition: .25s;
-    box-shadow: 0 7px 13px -3px var(--hmp-color-25), 0 2px 4px 0 var(--hmp-color-50), inset 0 0 0 0 var(--hmp-color);
+    box-shadow: 0 7px 26px -3px var(--hmp-color-25), 0 2px 8px 0 var(--hmp-color-50);
     position: relative
 }
 
@@ -5861,7 +5867,8 @@ svg .polygon {
 .mdp-float-btn svg {
     width: 1em;
     height: 1em;
-    fill: var(--hmp-color);
+    fill: var(--bg-body);
+    /* fill: var(--hmp-color); */
     z-index: 2
 }
 

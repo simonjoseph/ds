@@ -46,7 +46,8 @@ $(function () {
 			, logo = $(".navbar .logo> img");
 		if (bodyScroll > 100) {
 			navbar.addClass("nav-scroll");
-			logo.attr('src', 'img/logo.png');
+			// logo.attr('src', 'img/logo.png');
+			logo.attr('src', 'img/logo2.png');
 		}
 		else {
 			navbar.removeClass("nav-scroll");
@@ -235,7 +236,7 @@ $(function () {
         loop: true
         , margin: 30
         , mouseDrag: true
-        , autoplay: false
+        , autoplay: true
         , dots: true
         , responsiveClass: true
         , responsive: {
