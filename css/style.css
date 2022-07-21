@@ -3048,8 +3048,13 @@ cite {
     background-image: url(../img/use-cases-climate-security.jpg);
 }
 
-.service-img {
+/* .service-img {
     height: 734px;
+    object-fit: cover;
+} */
+
+.service-img {
+    height: 453px;
     object-fit: cover;
 }
 
@@ -3083,7 +3088,7 @@ cite {
 
 .service-cemter {
     position: relative;
-    padding: var(--section-padding) 15px;
+    /* padding: var(--section-padding) 15px; */
     z-index: 5;
 }
 
@@ -6909,6 +6914,37 @@ svg .polygon {
     .header .caption h1 {
         font-size: 60px;
         margin-bottom: 15px;
+    }
+
+    .banner-header h1{
+        font-size: 30px;
+    }
+
+    .text-font{
+        font-size: 20px;
+    }
+
+    .service-img {
+        height: auto;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+    
+    .service-cemter p{
+        font-size: 1.125rem;
+    }
+
+    .flexs-column-reverse {
+        -webkit-box-orient: vertical!important;
+        -webkit-box-direction: reverse!important;
+        -ms-flex-direction: column-reverse!important;
+        flex-direction: column-reverse!important;
     }
 
     .header .caption h1 span {
