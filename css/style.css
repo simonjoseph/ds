@@ -177,6 +177,10 @@ h6 {
     color: #fff;
 }
 
+.text-inteligente{
+    font-family: candara;
+}
+
 h1 {
     font-size: 60px;
 }
@@ -1306,10 +1310,16 @@ header .video-container video {
 }
 
 header .video-container .video-bg {
-    background-color: #000000b8;
+    /* background-color: #000000b8;
     opacity: 1;
-    height: 100vh;
+     */
+
+     height: 100vh;
     width: 100%;
+
+    background-color: #000000;
+    opacity: 0.53;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 
 .video-bg-container {
@@ -3462,7 +3472,7 @@ cite {
 }
 
 .service_area .service_slider_section .service_box .service_img {
-    background: url("../img/smart-home.jpg") center center no-repeat;
+    background: url("../img/ds-casainteligente.jpg")  no-repeat;
     background-size: cover;
     width: 100%;
     height: 224px;
@@ -3854,9 +3864,9 @@ only screen and (max-width: 320px) {
     height: 90px;
     text-align: center;
     line-height: 90px;
-    -webkit-border-radius: 50%;
+    /* -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 50%; */
     position: relative;
     font-size: 40px;
     z-index: 1;
@@ -3917,8 +3927,8 @@ only screen and (max-width: 320px) {
 
 .feature_service_img img {
     /* width: auto; */
-    height: 300px;
-    border-radius: 20px;
+    /* height: 300px; */
+    /* border-radius: 20px; */
 }
 
 /* area */
@@ -6935,9 +6945,55 @@ svg .polygon {
     h2 {
         font-size: 35px;
     }
+
+    .service-cemter{
+        padding: 30px 0;
+    }
     
     .service-cemter p{
+        /* font-size: 1.125rem; */
+        padding: 0 15px;
+    }
+
+    .section-padding{
+        padding: 0 0px;
+    }
+
+    blockquote {
         font-size: 1.125rem;
+    }
+
+    blockquote:before {
+        content: '“';
+        left: -1rem;
+        top: -1rem;
+    }
+
+    blockquote:after {
+        content: '”';
+        right: -1rem;
+        bottom: 1rem;
+    }
+
+    .news-description{
+        display: none;
+    }
+
+    .news-hover {
+        padding: 0.5rem;
+    }
+
+    h3.news-title  {
+        font-size: 20px;
+    }
+
+    .news-item:hover .news-hover .read-more {
+        z-index: 100px;
+    }
+
+    .service-ti{
+        font-size: 25px;
+        padding: 15px;
     }
 
     .flexs-column-reverse {
