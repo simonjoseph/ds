@@ -14,6 +14,64 @@
   <link rel="stylesheet" href="fontawesome-free/css/all.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/DS-Casa-Inteligente-Logo-tipo.ico" type="image/x-icon">
+
+  <style>
+
+.about-banner {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.about-img { width: 100%; }
+
+.play-btn {
+  position: absolute;
+  /* bottom: 24%;
+  right: 8%; */
+  bottom: 4%;
+    right: 89%;
+  background: var(--white);
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.tv-icon{
+  bottom: 40%;
+    right: 40%
+}
+
+.music-icon{
+  bottom: 30%;
+  right: 60%;
+}
+
+.play-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  animation: pulseAnim 2s forwards infinite;
+}
+
+@keyframes pulseAnim {
+
+  0% {
+    transform: scale(1);
+    border-color: var(--black);
+  }
+
+  100% {
+    transform: scale(1.5);
+    border-color: transparent;
+  }
+
+}
+  </style>
 </head>
 
 <body>
@@ -75,8 +133,8 @@
 
   <!-- Content -->
   <div class="content-wrapper">
-    <section class="banner-header banner-img banner-img-service section-padding valign bg-img bg-fixed" data-overlay-darkgray="1"
-      data-background="img/smart-home.jpg">
+    <section class="banner-header banner-img section-padding valign bg-img bg-fixed" data-overlay-darkgray="1"
+      data-background="img/Áudio-e-vídeo/Imagem_audio-retro-bunner.png">
       <a href="#services" class="scroll-down" id="cf">
         <div class="mouse">
           <span></span>
@@ -93,42 +151,103 @@
       </div>
     </section>
 
+    <!--  -->
+<section class="section-padding" >
+  <div class="container ">
+    <div class="card" >
+      
+      <div class="row ">
+        <div class="col-md-6 ">
+          <h2 class="home-title">
+            Por comando de voz peça o que quizer
+          </h2>
+          <div class="home-text">
+            <!-- <p>
+              Somos Iná, um escritório independente paulistano que acredita em
+              criar espaços de acordo com a vida das pessoas. Fundado em 2011,
+              hoje somos três sócios, Karen, Júlio e Marcos, que acompanham cada
+              ideia e cada projeto como se fossem seus.
+            </p> -->
+        </div>
+        </div>
+        <div class="col-md-6 ">
+          <!-- <img src="img/Home-theater-OK/cinema - imagem actual.png" style="height: 364px; width: 555px;" class="securys-img" alt="..."> -->
+          <figure class="about-banner">
+
+            <img src="img/Home-theater-OK//cinema - imagem actual.png" alt="Eduland students" class="about-img securys-img" style="height: 364px; width: 555px;">
+
+            <!-- <img src="./assets/images/about-vector.svg" alt="Vector line art" class="vector-line"> -->
+
+            <button class="play-btn">
+              <i class="fas fa-music"></i>
+            </button>
+
+          </figure>
+        </div>
+      </div>
+    </div>
+        
+  </div> 
+</section>
+
+    <div class=" mb-120">
+      <div class="card" style="">
+        
+        <div class="row no-gutters">
+          <!-- <div class="col-md-6"> -->
+            <figure class="about-banner">
+
+              <img src="img/segurança - OK/Crianças em casa - mae.png" alt="Eduland students" class="about-img" >
+  
+              <!-- <img src="./assets/images/about-vector.svg" alt="Vector line art" class="vector-line"> -->
+  
+              <button class="play-btn music-icon">
+                <i class="fas fa-music"></i>
+              </button>
+              <button class="play-btn tv-icon">
+                <i class="fas fa-tv"></i>
+              </button>
+  
+            </figure>
+          <!-- </div> -->
+          <!-- <div class="col-md-6 service-bg">
+            <img src="img/smart.jpg" class="service-img" alt="...">
+          </div> -->
+        </div>
+      </div>
+          
+    </div> 
+
     <div class="row no-gutters">
-      <div class="col-md-3">
-        <img src="img/smart.jpg" class="service-img" alt="...">
+      <div class="col-md-3" style="overflow: hidden;">
+        <img src="img/segurança - OK/xadrez/06.png" class="secury-img" alt="...">
       </div>
       <div class="col-md-3 service-bg">
         <!-- <img src="img/shape.png" class="triangle_shape_2 installation_shape_2" alt="Shape"> -->
         <div class="">
           <div class="">
-            <h1 class="card-title service-ti">Card title</h1>
+            <h1 class="card-title p-card service-ti">Card title</h1>
             <p class="card-text">
               A DS Casa Inteligente fornece soluções tecnológicas únicas, simples e bonitas
               para espaços residenciais e comerciais. Colaborando com arquitetos,
-              designers de interiores e desenvolvedores, nossa gama ou áudio visual, cinema
-              em casa, rede, segurança, acesso e controle ambiental são entregues
-              habilmente com mais de 4 anos de experiência. Trabalhando ao lado de
-              consultores mecânicos e elétricos, podemos garantir sistemas integrados e
+              designers de interiores e desenvolvedores, nossa gama ou áudio visual,
               perfeitos para o usuário final.
             </p>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <img src="img/smart.jpg" class="service-img" alt="...">
+      <div class="col-md-3" style="overflow: hidden;">
+        <img src="img/segurança - OK/xadrez/05.png" class="secury-img" alt="...">
       </div>
       <div class="col-md-3 service-bg">
         <!-- <img src="img/shape.png" class="triangle_shape_2 installation_shape_2" alt="Shape"> -->
         <div class="">
           <div class="">
-            <h1 class="card-title service-ti">Card title</h1>
-            <p class="card-text">
+            <h1 class="card-title p-card service-ti">Card title</h1>
+            <p class="card-text ">
               A DS Casa Inteligente fornece soluções tecnológicas únicas, simples e bonitas
               para espaços residenciais e comerciais. Colaborando com arquitetos,
-              designers de interiores e desenvolvedores, nossa gama ou áudio visual, cinema
-              em casa, rede, segurança, acesso e controle ambiental são entregues
-              habilmente com mais de 4 anos de experiência. Trabalhando ao lado de
-              consultores mecânicos e elétricos, podemos garantir sistemas integrados e
+              designers de interiores e desenvolvedores, nossa gama ou áudio visual,
               perfeitos para o usuário final.
             </p>
             <!-- <a class=" btn-default default_btn">Saber mais</a> -->
@@ -142,35 +261,29 @@
         <!-- <img src="img/shape.png" class="triangle_shape_2 installation_shape_2" alt="Shape"> -->
         <div class="">
           <div class="">
-            <h1 class="card-title service-ti">Card title</h1>
+            <h1 class="card-title p-card service-ti">Card title</h1>
             <p class="card-text">
               A DS Casa Inteligente fornece soluções tecnológicas únicas, simples e bonitas
               para espaços residenciais e comerciais. Colaborando com arquitetos,
-              designers de interiores e desenvolvedores, nossa gama ou áudio visual, cinema
-              em casa, rede, segurança, acesso e controle ambiental são entregues
-              habilmente com mais de 4 anos de experiência. Trabalhando ao lado de
-              consultores mecânicos e elétricos, podemos garantir sistemas integrados e
+              designers de interiores e desenvolvedores, nossa gama ou áudio visual,
               perfeitos para o usuário final.
             </p>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <img src="img/smart.jpg" class="service-img" alt="...">
+      <div class="col-md-3" style="overflow: hidden;">
+        <img src="img/segurança - OK/xadrez/02.png" class="secury-img" alt="...">
       </div>
       
       <div class="col-md-3 service-bg">
         <!-- <img src="img/shape.png" class="triangle_shape_2 installation_shape_2" alt="Shape"> -->
         <div class="">
           <div class="">
-            <h1 class="card-title service-ti">Card title</h1>
+            <h1 class="card-title p-card service-ti">Card title</h1>
             <p class="card-text">
               A DS Casa Inteligente fornece soluções tecnológicas únicas, simples e bonitas
               para espaços residenciais e comerciais. Colaborando com arquitetos,
-              designers de interiores e desenvolvedores, nossa gama ou áudio visual, cinema
-              em casa, rede, segurança, acesso e controle ambiental são entregues
-              habilmente com mais de 4 anos de experiência. Trabalhando ao lado de
-              consultores mecânicos e elétricos, podemos garantir sistemas integrados e
+              designers de interiores e desenvolvedores, nossa gama ou áudio visual,
               perfeitos para o usuário final.
             </p>
             <!-- <a class=" btn-default default_btn">Saber mais</a> -->
@@ -178,8 +291,8 @@
         </div>
       </div>
 
-      <div class="col-md-3">
-        <img src="img/smart.jpg" class="service-img" alt="...">
+      <div class="col-md-3" style="overflow: hidden;">
+        <img src="img/segurança - OK/xadrez/03.png" class="secury-img" alt="...">
       </div>
     </div>
 

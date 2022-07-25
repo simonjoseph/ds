@@ -14,6 +14,113 @@
   <link rel="stylesheet" href="fontawesome-free/css/all.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/DS-Casa-Inteligente-Logo-tipo.ico" type="image/x-icon">
+
+  <style>
+    .about-item {
+  background: var(--bg-new);
+  padding: 20px;
+  /* border-radius: 8px; */
+  width: 400px;
+  /* height: 300px; */
+}
+
+.about-card {
+  position: relative;
+  padding: 30px 10px 20px;
+  border: 1px solid var(--onyx-1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.about-card::before,
+.about-card::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background: #fff;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+
+.about-card::before {
+  width: 3px;
+  height: 100px;
+}
+
+.about-card::after {
+  width: 100px;
+  height: 3px;
+}
+
+.about-item:hover .about-card::before,
+.about-item:hover .about-card::after { background: var(--bg-ciano); }
+
+
+.about-card-title {
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.about-item:hover .about-card-title { color: var(--bg-ciano); }
+
+.about-card-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+blockquote:before {
+    content: '“';
+    left: -1rem;
+    top: -1rem;
+}
+
+blockquote:after {
+    content: '”';
+    right: 5rem;
+    bottom: 1.8rem;
+}
+
+.box-proj {
+    height: 20rem;
+    width: 30rem;
+    margin: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-proj::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    transition: .2s linear;
+}
+
+.box-proj img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-proj h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    opacity: 1;
+}
+
+
+  </style>
 </head>
 
 <body>
@@ -75,8 +182,8 @@
 
   <!-- Content -->
   <div class="content-wrapper">
-    <section class="banner-header banner-img banner-img-service section-padding valign bg-img bg-fixed" data-overlay-darkgray="1"
-      data-background="img/smart-home.jpg">
+    <section class="banner-header banner-img section-padding valign bg-img bg-fixed" data-overlay-darkgray="1"
+      data-background="img/elaboracao-projecto/elaboracao-projecto.jpg">
       <a href="#services" class="scroll-down" id="cf">
         <div class="mouse">
           <span></span>
@@ -87,129 +194,96 @@
       </a>
       <div class="container">
         <h1 class="text-center">
-          Casa inteligente
+          Elaboração de projecto
         </h1>
         <!-- <h4 class="text-center text-light">A nossa equipe está pronta para lhe apoiar</h4> -->
       </div>
     </section>
 
-    <section class="">
-      <div class="container">
-        <div class="texto bannerH text-center mt-4">
-          <h2 class="text-dark text-font" >Já imaginou cuidar da sua casa apartir de um smartphone? </h2>
+    <section class=" container section-padding d-flex justify-content-end">
+      <li class="about-item">
+        <div class="about-card">
+
+          <!-- <div class="card-number">01</div> -->
+
+          <!-- <div class="card-icon">
+            <img src="img/elaboracao-projecto/elaboracao-projecto.jpg" alt="wallet icon">
+          </div> -->
+
+          <!-- <h3 class="h3 about-card-title">Set up Your Wallet</h3> -->
+
+          <p class="about-card-text">
+            
+          </p>
+
+          <div class="divblock">
+            <blockquote class="text-center pb-5 text-light">O sonho sonhado sozinho é um Sonho. <br> O sonho sonhado juntos é uma Realidade.</blockquote>
+          </div>
+
         </div>
+      </li>
+    </section>
+
+    <section class="">
+      <div class="container ">
+        <div class="card">
+
+          <div class="row ">
+            <div class="col-md-6 ">
+              <h2 class="home-title text-dark">
+                Colocar as suas ideias no papel...
+              </h2>
+              <div class="home-text">
+                <p>
+                  Somos Iná, um escritório independente paulistano que acredita em
+                  criar espaços de acordo com a vida das pessoas. Fundado em 2011,
+                  hoje somos três sócios, Karen, Júlio e Marcos, que acompanham cada
+                  ideia e cada projeto como se fossem seus.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <img src="img/HVAC/ds-mulher.jpg" style="height: 364px; width: 555px;"
+                class="securys-img" alt="...">
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!--  -->
-    <section class="feature_service_area section-padding">
+    <section>
       <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-
-                  <div class="feature_service_flex">
-                      <div class="feature_service_left">
-                          <div class="feature_service_item">
-                              <i class="fas fa-tv"></i>
-                              <div class="details_right">
-                                  <h3 class="text-dark">HD Resolution</h3>
-                                  <p>See crisp images of your home</p>
-                              </div><!--end .details_right-->
-                          </div><!--end .feature_service_item-->
-                          <div class="feature_service_item">
-                              <i class="fas fa-wifi"></i>
-                              <div class="details_right">
-                                  <h3 class="text-dark">WiFi Connectivity</h3>
-                                  <p>WiFi outdoor camera</p>
-                              </div><!--end .details_right-->
-                          </div><!--end .feature_service_item-->
-                         
-                      </div><!--end .feature_service_left-->
-                      <div class="feature_service_middle">
-                          <div class="feature_service_item">
-                              <i class="fas fa-user-secret"></i>
-                              <div class="details_right">
-                                  <h3 class="text-dark">Motion Detection</h3>
-                                  <p>Any detected movement triggers</p>
-                              </div><!--end .details_right-->
-                          </div><!--end .feature_service_item-->
-                          <div class="feature_service_item">
-                              <i class="fas fa-mobile-alt"></i>
-                              <div class="details_right">
-                                  <h3 class="text-dark">HomeSecure Smart Clips</h3>
-                                  <p>Motion detection triggers</p>
-                              </div><!--end .details_right-->
-                          </div><!--end .feature_service_item-->
-                          
-                      </div><!--end .feature_service_middle-->
-                      <div class="feature_service_right">
-                          <div class="feature_service_img">
-                              <img src="img/service_smartHome.png" alt="Service">
-                          </div><!--end .feature_service_img-->
-                      </div><!--end .feature_service_right-->
-                  </div><!--end .feature_service_flex-->
-
-              </div><!--end .col-md-12-->
-          </div><!--end .row-->
-      </div><!--end .container-->
-  </section>
-    <!--  -->
-
-    <div class="">
-      <div class="card" style="">
-        
-        <div class="row no-gutters">
+        <div class="row mb-20 mt-20">
           <div class="col-md-6">
-            <img src="img/smart.jpg" class="service-img" alt="...">
+            <div class="box-proj" data-aos="fade-up">
+              <img src="img/elaboracao-projecto/elaboracao-projecto.jpg" alt="">
+              <h3>Projectos A</h3>
+            </div>
           </div>
-          <div class="col-md-6 service-bg">
-            <img src="img/shape.png" class="triangle_shape_2 installation_shape_2" alt="Shape">
-            <div class="service-cemter">
-              <div class="card-body">
-                <h1 class="card-title service-ti">Card title</h1>
-                <p class="card-text">
-                  A DS Casa Inteligente fornece soluções tecnológicas únicas, simples e bonitas
-                  para espaços residenciais e comerciais. Colaborando com arquitetos,
-                  designers de interiores e desenvolvedores, nossa gama ou áudio visual, cinema
-                  em casa, rede, segurança, acesso e controle ambiental são entregues
-                  habilmente com mais de 4 anos de experiência. Trabalhando ao lado de
-                  consultores mecânicos e elétricos, podemos garantir sistemas integrados e
-                  perfeitos para o usuário final.
-                </p>
-                <a class=" btn-default default_btn">Saber mais</a>
-              </div>
+          <div class="col-md-6">
+            <div class="box-proj" data-aos="fade-up">
+              <img src="img/elaboracao-projecto/elaboracao-projecto.jpg" alt="">
+              <h3>Projectos B</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box-proj" data-aos="fade-up">
+              <img src="img/elaboracao-projecto/elaboracao-projecto.jpg" alt="">
+              <h3>Projectos C</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box-proj" data-aos="fade-up">
+              <img src="img/elaboracao-projecto/elaboracao-projecto.jpg" alt="">
+              <h3>Projectos D</h3>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="card" style="">
-        <div class="row no-gutters">
-
-          <div class="col-md-6 service-bg1">
-            <div class="service-cemter">
-              <div class="card-body">
-                <h1 class="card-title service-ti">Card title</h1>
-                <p class="card-text">
-                  A DS Casa Inteligente fornece soluções tecnológicas únicas, simples e bonitas
-                  para espaços residenciais e comerciais. Colaborando com arquitetos,
-                  designers de interiores e desenvolvedores, nossa gama ou áudio visual, cinema
-                  em casa, rede, segurança, acesso e controle ambiental são entregues
-                  habilmente com mais de 4 anos de experiência. Trabalhando ao lado de
-                  consultores mecânicos e elétricos, podemos garantir sistemas integrados e
-                  perfeitos para o usuário final.
-                </p>
-                <a class="btn btn-default default_btn" >Last updated 3 mins ago</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <img src="img/man-choosing-temperature-of-smart-home-near-girl-2021-10-05-01-02-01-utc-1024x684.jpg" class="service-img" alt="...">
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
 
     <section class="">

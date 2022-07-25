@@ -1928,10 +1928,6 @@ s .video__descriptions {
     /* margin-top: 150px; */
 }
 
-/* .text-font{
-
-} */
-
 .any .texto h2,
 .any .texto h3 {
     font-size: 2.5rem;
@@ -1939,7 +1935,8 @@ s .video__descriptions {
 }
 
 .text-font {
-    font-size: 2.5rem;
+    font-size: 2em;
+    /* font-size: 2.5rem; */
 }
 
 .any-suporte .texto {
@@ -3039,7 +3036,7 @@ cite {
 }
 
 .services .bg-2 {
-    background-image: url("../img/BLOG - HVAC.webp");
+    background-image: url("../img/BLOG-HVAC.webp");
 }
 
 .services .bg-3 {
@@ -3051,7 +3048,7 @@ cite {
 }
 
 .services .bg-5 {
-    background-image: url("../img/BLOG - HVAC.webp");
+    background-image: url(../img/BLOG-HVAC.webp);
 }
 
 .services .bg-6 {
@@ -3066,6 +3063,113 @@ cite {
 .service-img {
     height: 453px;
     object-fit: cover;
+    /* background-position: ; */
+}
+
+.bg-main{
+    background: hsl(240deg 66% 19%);
+}
+
+.secury-img{
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+    animation: lazy-scaleUp 30s linear infinite;
+}
+/*  */
+
+/* .about-img {
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+    animation: lazy-scaleUp 30s linear infinite;
+  }
+   */
+
+   .home-title {
+    color: black;
+    margin: 40px 0 32px;
+    font-size: 36px;
+    line-height: 124%;
+  }
+
+  .home-text {
+    font-size: 18px;
+    margin-bottom: 32px;
+    line-height: 150%;
+  }
+
+  .card-shadow {
+    box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 50%);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  }
+
+  .card-container {
+    max-width: 745px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .card-left,
+  .card-right {
+    width: 50%;
+  }
+
+  .card-inner {
+    padding: 60px 30px 60px 30px;
+  }
+
+  .elementor-heading-title {
+    color: #060A30;
+    font-family: "Kanit", Sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 44px;
+  }
+
+  .card-image {
+    background-image: url('/img/BLOG-HVAC.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .color{
+    color: #54595F;
+  }
+
+  .elementor-icon-list-text {
+  align-self: center;
+  padding-left: 5px;
+}
+
+.elementor-icon-list-item:not(:first-child) {
+  margin-top: calc(18px/2);
+}
+.elementor-icon-list-item:not(:last-child) {
+  padding-bottom: calc(18px/2);
+}
+  
+  @keyframes lazy-scaleUp {
+  
+    0%,
+    100% { transform: scale(1); }
+    50%  { transform: scale(1.2); }
+  
+  }
+  /*  */
+
+.card-text{
+    color: #fff;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+.p-card{
+    color: #fff;
+    padding: 0px 20px;
+    padding-top: 20px;
 }
 
 .img-4 {
@@ -3479,12 +3583,12 @@ cite {
 }
 
 .service_area .service_slider_section .service_box .service_img.bg_2 {
-    background: url("../img/homeTheater.jpg") center center no-repeat;
+    background: url("../img/Home-theater-OK/imagem-cinema-bunner.jpg") center right no-repeat;
     background-size: cover;
 }
 
 .service_area .service_slider_section .service_box .service_img.bg_3 {
-    background: url("../img/audioevideo.jpeg") center center no-repeat;
+    background: url("../img/Áudio-e-vídeo/Imagem_audio-retro-bunner.png") center center no-repeat;
     background-size: cover;
 }
 
@@ -3494,7 +3598,7 @@ cite {
 }
 
 .service_area .service_slider_section .service_box .service_img.bg_5 {
-    background: url("../img/BLOG\ -\ HVAC.webp") center center no-repeat;
+    background: url("../img/BLOG-HVAC.webp") center center no-repeat;
     background-size: cover;
 }
 
@@ -5289,7 +5393,8 @@ svg .polygon {
 }
 
 .pict img {
-    width: 420px;
+    width: 300px;
+    /* width: 420px; */
     /* height: 300px; */
     object-fit: contain;
 }
@@ -5796,7 +5901,7 @@ svg .polygon {
 .butn-dark {
     position: relative;
     line-height: 1.2em;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .butn-dark a {
