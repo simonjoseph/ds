@@ -119,6 +119,56 @@ blockquote:after {
     opacity: 1;
 }
 
+/*  */
+/*-----------------------------------*\
+  #PROJECT
+\*-----------------------------------*/
+
+.project .section-text { margin-block: 5px 35px; }
+
+.project-card {
+  position: relative;
+  border-radius: var(--radius-8);
+  overflow: hidden;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 0.5;
+  transition: var(--transition-2);
+}
+
+.project-card:is(:hover, :focus-within)::after { opacity: 0.8; }
+
+.project-card .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1;
+  transition: var(--transition-2);
+}
+
+.project-card:is(:hover, :focus-within) .card-content { transform: translateY(-20px); }
+
+/* .project-card .card-subtitle {
+  color: var(--lavender-gray);
+  font-size: var(--fs-6);
+  line-height: 1;
+} */
+
+.project-card .card-title {
+  color: white;
+  margin-block: 12px 15px;
+}
+
 
   </style>
 </head>
@@ -202,7 +252,7 @@ blockquote:after {
 
     <section class=" container section-padding d-flex justify-content-end">
       <li class="about-item">
-        <div class="about-card">
+        <div class="about-card ">
 
           <!-- <div class="card-number">01</div> -->
 
@@ -229,7 +279,7 @@ blockquote:after {
         <div class="card">
 
           <div class="row ">
-            <div class="col-md-6 ">
+            <div class="col-md-6 align-self-center">
               <h2 class="home-title text-dark">
                 Colocar as suas ideias no papel...
               </h2>
@@ -244,7 +294,7 @@ blockquote:after {
             </div>
             <div class="col-md-6 ">
               <img src="img/HVAC/ds-mulher.jpg" style="height: 364px; width: 555px;"
-                class="securys-img" alt="...">
+                class="securys-img about-img" alt="...">
             </div>
           </div>
         </div>
@@ -252,7 +302,107 @@ blockquote:after {
       </div>
     </section>
 
-    <section>
+    <section class="mb-120">
+      <div class="container">
+        <section class="">
+          <div class="container">
+            <div class="texto bannerH text-center mt-60">
+              <h2 class="text-dark text-font text-inteligente" >Já imaginou cuidar da sua casa apartir de um smartphone? </h2>
+            </div>
+          </div>
+        </section>
+        <div class="row mb-20 mt-20">
+          <div class="col-md-6">
+            <div class="project-card">
+
+              <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                <img src="img/banner.jpg" width="510" height="700" loading="lazy" alt="Designing a better cinema experience" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <!-- <p class="card-subtitle">SEO Optimization</p> -->
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Designing a better cinema experience</a>
+                </h3>
+
+                <!-- <a href="#" class="btn btn-primary">View Details</a> -->
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="project-card">
+
+              <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                <img src="img/banner.jpg" width="510" height="700" loading="lazy" alt="Designing a better cinema experience" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <!-- <p class="card-subtitle">SEO Optimization</p> -->
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Designing a better cinema experience</a>
+                </h3>
+
+                <!-- <a href="#" class="btn btn-primary">View Details</a> -->
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="project-card">
+
+              <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                <img src="img/banner.jpg" width="510" height="700" loading="lazy" alt="Designing a better cinema experience" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <!-- <p class="card-subtitle">SEO Optimization</p> -->
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Designing a better cinema experience</a>
+                </h3>
+
+                <!-- <a href="#" class="btn btn-primary">View Details</a> -->
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="project-card">
+
+              <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                <img src="img/banner.jpg" width="510" height="700" loading="lazy" alt="Designing a better cinema experience" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <!-- <p class="card-subtitle">SEO Optimization</p> -->
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Designing a better cinema experience</a>
+                </h3>
+
+                <!-- <a href="#" class="btn btn-primary">View Details</a> -->
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section>
       <div class="container">
         <div class="row mb-20 mt-20">
           <div class="col-md-6">
@@ -283,13 +433,13 @@ blockquote:after {
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
-    <section class="">
+    <section class="any prop">
       <div class="container">
-        <div class="texto mt-30 text-center">
-          <h2 class="text-dark ">Solicite uma proposta </h2>
+        <div class="texto" >
+          <h2>Solicite uma proposta </h2>
           <div class="butn-dark text-center "><a class="cont" href="contact.html"><span>Fale connosco
                 <i class="fas fa-arrow-right"></i></span></a></div>
         </div>

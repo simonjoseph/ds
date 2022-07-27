@@ -5387,10 +5387,10 @@ svg .polygon {
     margin-right: 6px
 }
 
-.pict {
+/* .pict {
     background: var(--bg-body2);
     border-radius: 8px;
-}
+} */
 
 .pict img {
     width: 300px;

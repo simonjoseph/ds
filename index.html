@@ -17,6 +17,121 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
   <link rel="shortcut icon" href="img/DS-Casa-Inteligente-Logo-tipo.ico" type="image/x-icon">
 
+  <style>
+    /*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
+.grid-list {
+  display: grid;
+  gap: 30px;
+}
+
+.blog .section-text { margin-block: 5px 35px; }
+
+.blog-card { background-color: var(--white-2); }
+
+.blog-card .card-banner { overflow: hidden; }
+
+.blog-card .card-banner img { transition: var(--transition-2); }
+
+.blog-card:is(:hover, :focus-within) .card-banner img { transform: scale(1.05); }
+
+.blog-card .card-content { padding: 15px; }
+
+.blog-card .time {
+  color: var(--red-crayola);
+  font-size: var(--fs-6);
+  line-height: 1;
+  margin-block-end: 10px;
+}
+
+.blog-card .card-title { transition: var(--transition-1); }
+
+.blog-card .card-title:is(:hover, :focus) { color: var(--red-crayola); }
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 575px screen
+ */
+
+ @media (min-width: 575px) {
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+  }
+
+
+.blog .grid-list { grid-template-columns: 1fr; }
+
+.blog-card.grid {
+  display: grid;
+  grid-template-columns: 0.47fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+}
+
+/**
+ * responsive for larger than 992px screen
+ */
+
+ @media (min-width: 992px) {
+
+
+/**
+ * BLOG
+ */
+
+ .grid-list { grid-template-columns: repeat(3, 1fr); }
+
+.blog .grid-list {
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+}
+
+.blog .grid-list > li:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+
+.blog-card:not(.grid) { height: 100%; }
+
+.blog-card .card-content { padding-block: 10px; }
+
+.blog-card:not(.grid) .card-content { padding: 25px; }
+
+.blog-card.grid .h3 { --fs-3: 2rem; }
+
+.blog-card .time { --fs-6: 1.6rem; }
+
+}
+
+/**
+ * responsive for larger than 1200px screen
+ */
+
+ @media (min-width: 1200px) {
+
+/**
+ * BLOG
+ */
+
+ 
+
+.blog-card .time { font-size: 1rem; }
+
+.blog-card.grid .h3 { font-size: 1.4rem; }
+
+}
+
+
+  </style>
+
 </head>
 
 <body>
@@ -325,6 +440,124 @@
     </div>
 
     <!-- Blog section -->
+    <!-- <section class="section blog" id="blog" aria-label="blog">
+      <div class="container">
+
+        <h2 class="h2 section-title">Latest Articles Updated Weekly</h2>
+
+        <p class="section-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna
+          aliqua.
+        </p>
+
+        <ul class="grid-list">
+
+          <li>
+            <div class="blog-card">
+
+              <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                <img src="img/banner.jpg" width="860" height="646" loading="lazy" alt="How to Become a Successful Entry Level UX Designer" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <time class="time" datetime="2022-06-16">June 16, 2022</time>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">How to Become a Successful Entry Level UX Designer</a>
+                </h3>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="blog-card grid">
+
+              <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                <img src="img/banner.jpg" width="860" height="646" loading="lazy" alt="2022 Local SEO Success: The Year of Everywhere" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <time class="time" datetime="2022-06-16">June 16, 2022</time>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">2022 Local SEO Success: The Year of Everywhere</a>
+                </h3>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="blog-card grid">
+
+              <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                <img src="img/banner.jpg" width="860" height="646" loading="lazy" alt="The Guide to Running a Client Discovery Process" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <time class="time" datetime="2022-06-16">June 16, 2022</time>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">The Guide to Running a Client Discovery Process</a>
+                </h3>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="blog-card grid">
+
+              <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                <img src="img/banner.jpg" width="860" height="646" loading="lazy" alt="3 Ways to Get Client Approval for Scope Changes" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <time class="time" datetime="2022-06-16">June 16, 2022</time>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">3 Ways to Get Client Approval for Scope Changes</a>
+                </h3>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="blog-card grid">
+
+              <figure class="card-banner img-holder" style="--width: 860; --height: 646;">
+                <img src="img/banner.jpg" width="860" height="646" loading="lazy" alt="Top 21 Must-Read Blogs For Creative Agencies" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <time class="time" datetime="2022-06-16">June 16, 2022</time>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Top 21 Must-Read Blogs For Creative Agencies</a>
+                </h3>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section> -->
+    <!--  -->
     <section class="blog section-padding" id="blogId">
       <div class="container">
         <div class="row">
